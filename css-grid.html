@@ -11,12 +11,14 @@
             border: 1px solid navy;
             padding: 10px;
         }
+
         .parent{
-            display: flex;
-            flex-direction:row;
-            justify-content: flex-start;
-            align-items: center;
-            height: 100vh;
+            display: grid;
+            /* grid-template-columns: 200px 300px 600px; */
+            grid-template-columns: 1fr 5fr 3fr;
+            gap: 10px;
+            row-gap: 20px;
+            column-gap: 40px;
         }
     </style>
 </head>
@@ -30,6 +32,15 @@
         </div>
         <div class="child">
             <h3>Child 3</h3>
+        </div>
+        <div class="child">
+            <h3>Child 4</h3>
+        </div>
+        <div class="child">
+            <h3>Child 5</h3>
+        </div>
+        <div class="child">
+            <h3>Child 6</h3>
         </div>
     </div>
 </body>
